@@ -1,0 +1,52 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+#alt + Return
+#	/usr/local/bin/st
+
+# program launcher
+#alt + p
+#	dmenu_run -p Run
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#
+# Volume Control
+#
+
+XF86AudioRaiseVolume
+	sndioctl output.level=+0.05
+
+XF86AudioLowerVolume
+	sndioctl output.level=-0.05
+
+XF86AudioMute
+	sndioctl output.mute=!
+
+#
+# Open Apps in Terminal
+#
+alt + shift + {f, t, c}
+	st -e {vifm, vim, calcurse} 
+
+#
+# dmenu shortcuts
+#
+
+# Open Videos with mpv (from browser)
+alt + shift + v
+	~/.local/bin/mpvload
+
+# Change Wallpaper
+alt + shift + w
+	~/.local/bin/chwall-dmenu
+
+# Take Screenshot
+Print
+	scrot ~/Pictures/screenshot-%Y-%m-%d-%T.png
+
+

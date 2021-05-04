@@ -20,7 +20,7 @@
 syntax on
 
 filetype plugin indent on
-
+set backspace=indent,eol,start
 set showmatch
 set incsearch
 set mouse=a
