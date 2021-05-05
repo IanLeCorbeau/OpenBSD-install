@@ -4,38 +4,6 @@ xsetroot -fg \#222222 -bg \#444444 -bitmap /usr/X11R6/include/X11/bitmaps/root_w
 
 #XRES=$(xrdb -query)
 
-#for CLK in date time; do
-#	FACE=$(echo "$XRES" | grep "xclock.${CLK}Face" | xargs | \
-#		cut -d ' ' -f 2-)
-#	GEOM=$(echo "$XRES" | grep "xclock.${CLK}Geom" | xargs | \
-#		cut -d ' ' -f 2-)
-#	STR=$(echo "$XRES" | grep "xclock.${CLK}Str" | xargs | \
-#		cut -d ' ' -f 2-)
-#
-#	xclock -face "$FACE" -geometry "$GEOM" -strftime "$STR" &
-#done
-
-# Show Sleep / Restart / Shutdown bar
-(
-while true; do
-	xmessage -geometry +250-32 \
-		-buttons "[ Sleep ]":20,"[ Restart ]":21,"[ Shutdown ]":22 ""
-	ACTION=$?
-	echo "Xmessage said: $ACTION"
-	if	[ $ACTION -eq 20 ]; then /usr/sbin/zzz;
-	elif	[ $ACTION -eq 21 ]; then
-		xsetroot -cursor_name watch
-		/sbin/shutdown -r now
-	elif	[ $ACTION -eq 22 ]; then
-		xsetroot -cursor_name watch
-		/sbin/shutdown -p now
-	else echo "Something went wrong";
-	fi
-
-	if [ -z "$(pgrep -U root xclock)" ]; then break; fi
-done
-) &
-
 #xconsole -geometry 480x130-0-0 -daemon -notify -verbose -fn fixed -exitOnFail
 
 #  install package openbsd-backgrounds
