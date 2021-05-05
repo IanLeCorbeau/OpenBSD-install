@@ -135,19 +135,6 @@ xlogin*logoFileName: /etc/X11/xenodm/pixmaps/OpenBSD_15bpp.xpm
 xlogin*useShape: true
 xlogin*logoPadding: 10
 
-! XMessage
-!
-xmessage*background:		BLACK
-xmessage*foreground:		WHITE
-xmessage.borderWidth:		0
-xmessage*message.scrollHorizontal: Never
-xmessage*message.scrollVertical:   Never
-xmessage.timeout:		0
-#if WIDTH > 800
-xmessage*font:			DejaVu Sans Condensed-16:bold:dpi=75
-#else
-xmessage*font:			DejaVu Sans Condensed-12:dpi=75
-
 ! uncomment to disable logins
 xlogin.Login.allowRootLogin:	false
 
