@@ -37,7 +37,11 @@ alt + shift + {f, t, c}
 # dmenu shortcuts
 #
 
-# Open Videos with mpv (from browser)
+# Shutdown/reboot with dmenu
+alt + shift + p
+	~/.local/bin/poweroffreboot
+
+# Open video links with mpv
 alt + shift + v
 	~/.local/bin/mpvload
 
