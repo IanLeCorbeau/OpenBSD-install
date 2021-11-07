@@ -2,13 +2,17 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
-#alt + Return
-#	/usr/local/bin/st
+# st
+alt + Return
+	/usr/local/bin/st
+
+# xterm
+alt + shift + Return
+	xterm
 
 # program launcher
-#alt + p
-#	dmenu_run -p Run
+alt + p
+	dmenu_run -p Run
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -18,20 +22,20 @@ super + Escape
 # Volume Control
 #
 
-XF86AudioRaiseVolume
+ctrl + shift + 0
 	sndioctl output.level=+0.05
 
-XF86AudioLowerVolume
+ctrl + shift + 9
 	sndioctl output.level=-0.05
 
-XF86AudioMute
+ctrl + shift + 8 
 	sndioctl output.mute=!
 
 #
 # Open Apps in Terminal
 #
 alt + shift + {f, t, c}
-	st -e {vifm, vim, calcurse} 
+	st -e {ranger, vim, calcurse} 
 
 #
 # dmenu shortcuts
@@ -41,6 +45,10 @@ alt + shift + {f, t, c}
 alt + shift + p
 	~/.local/bin/poweroffreboot
 
+# Connect / Disconnect Network
+alt + shift + n
+	~/.local/bin/netupdown.sh
+
 # Open video links with mpv
 alt + shift + v
 	~/.local/bin/mpvload
@@ -49,8 +57,12 @@ alt + shift + v
 alt + shift + w
 	~/.local/bin/chwall-dmenu
 
+#
+# Misc
+#
+
 # Take Screenshot
-Print
+alt + shift + s
 	scrot ~/Pictures/screenshot-%Y-%m-%d-%T.png
 
 
