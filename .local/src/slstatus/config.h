@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ ram_used,	" %s | ",	NULL },
 	{ cpu_perc,	" %s%% | ",	NULL },
-	{ run_command,	" %s | ",	".local/bin/OBSD_net.sh em0"},
+	{ run_command,	" %s | ",	".local/bin/OBSD_net.sh iwn0"},
 	{ vol_perc,	" %s%% | ",	NULL },
-	{ datetime,	"%s",           " %D %H:%M" },
+	{ datetime,	"%s",           " %D  %H:%M" },
 };
