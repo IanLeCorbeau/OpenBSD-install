@@ -1,14 +1,3 @@
-!! DWM Theming
-dwm.normbodercolor: #444444
-dwm.normbgcolor: #222222
-dwm.normfgcolor: #bbbbbb
-dwm.selbordercolor: #5294E2
-dwm.selbgcolor: #5294E2
-dwm.selffgcolor: #eeeeee
-dwm.titlebordercolor: #5294E2 
-dwm.titlebgcolor: #242424
-dwm.titlefgcolor: #eeeeee
-
 !! Terminal (ST) Theming
 
 !! Transparency (0-1):
@@ -27,74 +16,8 @@ st.font: Monospace-12;
 
 !! Colors
 
-!! Nord
 
-!#define nord0 #2E3440
-!#define nord1 #3B4252
-!#define nord2 #434C5E
-!#define nord3 #4C566A
-!#define nord4 #D8DEE9
-!#define nord5 #E5E9F0
-!#define nord6 #ECEFF4
-!#define nord7 #8FBCBB
-!#define nord8 #88C0D0
-!#define nord9 #81A1C1
-!#define nord10 #5E81AC
-!#define nord11 #BF616A
-!#define nord12 #D08770
-!#define nord13 #EBCB8B
-!#define nord14 #A3BE8C
-!#define nord15 #B48EAD
-
-!! Black
-!st.color0: nord1
-
-!! Red3
-!st.color1: nord11
-
-!! Green3
-!st.color2: nord14
-
-!! Yellow3
-!st.color3: nord13
-
-!! Blue2
-!st.color4: nord9
-
-!! Magenta3
-!st.color5: nord15
-
-!! Cyan3
-!st.color6: nord8
-
-!! Gray90
-!st.color7: nord5
-
-!! Gray50
-!st.color8: nord3
-
-!! Red
-!st.color9: nord11
-
-!! Green
-!st.color10: nord14
-
-!! Yellow
-!st.color11: nord13
-
-!! Blue
-!st.color12: nord9
-
-!! Magenta
-!st.color13: nord15
-
-!! Cyan
-!st.color14: nord7
-
-!! White
-!st.color15: nord6
-
-!! Gruvbox Backup
+!! Gruvbox!
 !
 !! Black
 st.color0: #161616
@@ -143,3 +66,62 @@ st.color14: #8ec07c
 
 !! White
 st.color15: #ebdbb2
+
+!! xterm theming
+XTerm*background:	#161616
+XTerm*foreground:	#eeeeee
+xterm*scrollBar:	false
+XTerm*toolBar:		false
+XTerm*faceName:		spleen
+XTerm*faceSize:		12
+
+!! Black
+XTerm*color0:		#161616
+
+!! Red3
+XTerm*color1:		#cc241d
+
+!! Green3
+XTerm*color2:		#98971a
+
+!! Yellow3
+XTerm*color3:		#d79921
+
+!! Blue2
+XTerm*color4:		#458588
+
+!! Magenta3
+XTerm*color5:		#b16286
+
+!! Cyan3
+XTerm*color6:		#689d6a
+
+!! Gray90
+XTerm*color7:		#a89984
+
+!! Gray50
+XTerm*color8: #928374
+
+!! Red
+XTerm*color9: #fb4934
+
+!! Green
+XTerm*color10: #b8bb26
+
+!! Yellow
+XTerm*color11: #fabd2f
+
+!! Blue
+XTerm*color12: #83a598
+
+!! Magenta
+XTerm*color13: #d3869b
+
+!! Cyan
+XTerm*color14: #8ec07c
+
+!! White
+XTerm*color15: #ebdbb2
+
+
+
