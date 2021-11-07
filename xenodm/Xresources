@@ -5,17 +5,6 @@
 !
 !
 
-#define WHITE	#eeeeee
-#define BLACK	#222222
-#define RED	#e25252
-#define BLUE	#5294E2
-#define BROWN	#6E6967
-#define DKBROWN	#54504F
-#define DKBLUE	#526FE2
-#define GREY	#54697F
-#define DKGREY	#4A566B
-
-
 
 xlogin*login.translations: #override \
 	<Key>F1: set-session-argument(failsafe) finish-field()\n\
@@ -76,8 +65,8 @@ xlogin*failFace:        DejaVu Sans Condensed-12:bold:dpi=75
 # endif
 #endif  /* If manual override */
 
-xlogin.login.background: BLACK
-xlogin.login.foreground: WHITE
+xlogin*login.background: #242424
+xlogin*login.foregound: #eeeeee
 
 #ifndef bpp1
 xlogin*borderWidth: 1
@@ -87,19 +76,19 @@ xlogin*innerFramesWidth: 0
 xlogin.Login.sepWidth: 0
 
 ! top/left border
-xlogin*hiColor: WHITE
+xlogin*hiColor: #eeeeee
 
 ! bottom/right border
-xlogin*shdColor: WHITE
+xlogin*shdColor: #eeeeee
 
 ! 'Welcome to..' text color
 xlogin*greetColor: #ded866
 #if defined(bpp4) || defined(bpp8) || defined(bpp15)
 ! flood fill
-xlogin*background: #596a79
-xlogin*inpColor: BLUE
+xlogin*background: #eeeeee
+xlogin*inpColor: #5294E2
 #endif
-xlogin*failColor: RED
+xlogin*failColor: #e25252
 
 ! 'Login:' and 'Password:'
 *Foreground: #eeeeff
@@ -136,7 +125,7 @@ xlogin*useShape: true
 xlogin*logoPadding: 10
 
 ! uncomment to disable logins
-xlogin.Login.allowRootLogin:	false
+! xlogin.Login.allowRootLogin:	false
 
 XConsole*background:	black
 XConsole*foreground:	white

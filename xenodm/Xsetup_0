@@ -1,10 +1,21 @@
 #!/bin/sh
-# $OpenBSD: Xsetup_0,v 1.8 2020/07/04 13:32:50 matthieu Exp $
-xsetroot -fg \#222222 -bg \#444444 -bitmap /usr/X11R6/include/X11/bitmaps/root_weave
+# $OpenBSD: Xsetup_0.in,v 1.1 2021/08/30 15:38:27 matthieu Exp $
 
-#XRES=$(xrdb -query)
+prefix="/usr/X11R6"
+exec_prefix="${prefix}"
 
-#xconsole -geometry 480x130-0-0 -daemon -notify -verbose -fn fixed -exitOnFail
+${exec_prefix}/bin/xsetroot -fg \#000000 -bg \#242424 -bitmap ${prefix}/include/X11/bitmaps/root_weave
+
+#${exec_prefix}/bin/xconsole -geometry 480x130-0-0 -daemon -notify -verbose -fn fixed -exitOnFail
+
+## Monitor setup
+
+#${exec_prefix}/bin/xrandr --output HDMI-1 --primary --auto --output LVDS-1 --off
+
+EXTMON=$(${exec_prefix}/bin/xrandr | /usr/bin/awk '/HDMI-1/ { print $2 }')
+if [ "$EXTMON" = "connected" ]; then
+	${exec_prefix}/bin/xrandr --output HDMI-1 --primary --auto --output LVDS-1 --off
+fi
 
 #  install package openbsd-backgrounds
 #  then uncomment:
