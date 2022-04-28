@@ -10,5 +10,6 @@ xrdb -merge $HOME/.Xresources
 compton -b &
 xwallpaper --stretch ~/Pictures/defwall.jpg &
 sxhkd &
-.local/src/slstatus/slstatus &
-exec /usr/local/bin/dwm
+#.local/src/slstatus/slstatus &
+#exec /usr/local/bin/dwm
+exec /usr/X11R6/bin/cwm
