@@ -7,7 +7,7 @@ sticky			yes
 fontname		"spleen:pixelsize=14:bold"
 
 # Appearance
-borderwidth 2
+borderwidth		2
 color activeborder	"#5294E2"
 color inactiveborder	"#565656"
 color urgencyborder	"#cc241d"
@@ -39,6 +39,16 @@ bind-key 4-6 group-only-6
 bind-key 4-7 group-only-7
 bind-key 4-8 group-only-8
 bind-key 4-9 group-only-9
+
+bind-key 4M-1 group-toggle-1
+bind-key 4M-2 group-toggle-2
+bind-key 4M-3 group-toggle-3
+bind-key 4M-4 group-toggle-4
+bind-key 4M-5 group-toggle-5
+bind-key 4M-6 group-toggle-6
+bind-key 4M-7 group-toggle-7
+bind-key 4M-8 group-toggle-8
+bind-key 4M-9 group-toggle-9
 
 bind-key 4S-1 window-movetogroup-1
 bind-key 4S-2 window-movetogroup-2
