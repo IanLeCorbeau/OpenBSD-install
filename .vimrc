@@ -13,5 +13,6 @@ set showmatch
 set incsearch
 set mouse=a
 set number
+set ruler
 
 vnoremap <C-C> :w !xclip -sel c <CR><CR>
