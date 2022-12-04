@@ -12,7 +12,7 @@ alt + shift + Return
 
 # program launcher
 alt + p
-	dmenu_run -p Run
+	dmenu_run -p Run -h 24
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -35,7 +35,7 @@ ctrl + shift + 8
 # Open Apps in Terminal
 #
 alt + shift + {f, t, c}
-	st -e {ranger, vim, calcurse} 
+	xterm -e {vifm, vim, calcurse} 
 
 #
 # dmenu shortcuts
@@ -64,5 +64,3 @@ alt + shift + w
 # Take Screenshot
 alt + shift + s
 	scrot ~/Pictures/screenshot-%Y-%m-%d-%T.png
-
-
