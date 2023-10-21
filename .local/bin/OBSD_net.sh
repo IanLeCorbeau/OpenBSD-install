@@ -4,7 +4,7 @@
 ## Usage: <path/to/script> <network interface to monitor> (ex: em0)
 
 INTERFACE=$1
-NETSTATE="$(ifconfig | grep "$INTERFACE" | awk '{ print $2 }' | cut -f2 -d '<' | cut -f1 -d ',')"
+NETSTATE="$(ifconfig "$INTERFACE" | awk '/flags/ { print $2 }' | cut -f2 -d '<' | cut -f1 -d ',')"
 
 if [ -z "$1" ]; then
 	printf '%s\n' "You need to provide an interface name as arg 1. (ex: em0)"
