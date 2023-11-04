@@ -15,4 +15,5 @@ set mouse=a
 set number
 set ruler
 
+hi SpellBad ctermfg=004 ctermbg=000
 vnoremap <C-C> :w !xclip -sel c <CR><CR>
