@@ -1,10 +1,22 @@
+! $Id: .Xresources,v 1.2 2023/10/22 16:40:07 i Exp i $
+
+! Termbar
+termbar*geometry:	136x1+0+0
+termbar*faceName:	Monospace-10
+termbar*internalBorder:	3
+termbar*saveLines:	0
+termbar*scrollBar:	false
+termbar*title:		termbar
+termbar*background:	#242424
+termbar*foreground:	#eeeeee
+
 !! Terminal (ST) Theming
 
 !! Transparency (0-1):
 st.alpha: 0.92
 
 !! Set a default font and font size as below:
-st.font: Monospace-12;
+st.font: DejaVu Sans Mono:pixelsize=14;
 
 ! st.termname: st-256color
 ! st.borderpx: 2
@@ -21,49 +33,34 @@ st.font: Monospace-12;
 !
 !! Black
 st.color0: #161616
-
 !! Red3
 st.color1: #cc241d
-
 !! Green3
 st.color2: #98971a
-
 !! Yellow3
 st.color3: #d79921
-
 !! Blue2
 st.color4: #458588
-
 !! Magenta3
 st.color5: #b16286
-
 !! Cyan3
 st.color6: #689d6a
-
 !! Gray90
 st.color7: #a89984
-
 !! Gray50
 st.color8: #928374
-
 !! Red
 st.color9: #fb4934
-
 !! Green
 st.color10: #b8bb26
-
 !! Yellow
 st.color11: #fabd2f
-
 !! Blue
 st.color12: #83a598
-
 !! Magenta
 st.color13: #d3869b
-
 !! Cyan
 st.color14: #8ec07c
-
 !! White
 st.color15: #ebdbb2
 
@@ -72,11 +69,11 @@ XTerm*background:	#161616
 XTerm*foreground:	#eeeeee
 xterm*scrollBar:	false
 XTerm*toolBar:		false
-XTerm*faceName:		spleen
-XTerm*faceSize:		12
+XTerm*faceName:		Monospace-11
+!XTerm*faceSize:		12
 
 !! Black
-XTerm*color0:		#161616
+XTerm*color0:		#282828
 
 !! Red3
 XTerm*color1:		#cc241d
