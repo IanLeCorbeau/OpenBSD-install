@@ -14,7 +14,6 @@ all:
 	for _file in ${DOTFILES}; do \
 		cp $$_file ${DESTDIR}/; \
 		done
-	mkdir -p ${DESTDIR}/.local/bin
 	for _script in ${SCRIPTS}; do \
 		install -m 755 .local/bin/$$_script ${DESTDIR}/.local/bin; \
 		done
