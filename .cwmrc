@@ -1,10 +1,11 @@
 # CWM config file
+# $Id: .cwmrc,v 1.2 2023/10/22 18:36:37 i Exp $
 
 # Sticky groups: uncomment to enable worskpace-like behavior
 sticky			yes
 
 # Default font
-fontname		"spleen:pixelsize=14:bold"
+fontname		"DejaVu Sans Mono:pixelsize=12:bold"
 
 # Appearance
 borderwidth		1
@@ -58,7 +59,7 @@ bind-key MS-5 window-movetogroup-5
 bind-key MS-6 window-movetogroup-6
 bind-key MS-7 window-movetogroup-7
 bind-key MS-8 window-movetogroup-8
-bind-key 4S-9 window-movetogroup-9
+bind-key MS-9 window-movetogroup-9
 
 bind-key 4-a group-toggle-all
 bind-key 4-g window-group
@@ -88,13 +89,16 @@ bind-key 4M-k window-snap-up
 bind-key 4M-l window-snap-right
 
 bind-key 4M-m menu-window
-bind-key 4-g menu-group
-bind-key 4-a menu-cmd
-bind-key 4-e menu-exec
+bind-key 4M-g menu-group
+bind-key 4M-a menu-cmd
+bind-key 4M-e menu-exec
+
+bind-mouse 4-1	window-move
 
 # Autogroup some apps
 autogroup 1	"st,st"
-autogroup 3	"Navigator,firefox-default"
+autogroup 3	"Navigator,firefox"
+autogroup 9	"xconsole,XConsole"
 
 ignore		"termbar"
 autogroup 0	"termbar"
